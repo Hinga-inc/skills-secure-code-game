@@ -16,6 +16,9 @@ from collections import namedtuple
 Order = namedtuple('Order', 'id, items')
 Item = namedtuple('Item', 'type, description, amount, quantity')
 
+PAYMENT = 'payment'
+PRODUCT = 'product'
+
 def validorder(order: Order):
     net = 0
 
